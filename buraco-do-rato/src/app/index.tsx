@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 import {Header} from '../components/Header/Header'
 import { styles } from "./style"
+import React = require("react");
 
 export default function Index(){
 
