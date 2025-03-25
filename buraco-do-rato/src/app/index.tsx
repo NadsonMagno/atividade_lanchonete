@@ -1,7 +1,8 @@
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 import {Header} from '../components/Header/Header'
 import { styles } from "./style"
-import React = require("react");
+import React from "react";
+import Login from '../components/Login/Login'
 
 export default function Index(){
 
@@ -12,6 +13,7 @@ export default function Index(){
 
         </View>
 
+        <Login />
     </ScrollView>
     );
 }

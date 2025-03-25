@@ -1,7 +1,7 @@
 import { View, Text, Pressable} from "react-native";
 import { Ionicons, Feather } from "@expo/vector-icons";
 import { styles } from "./style";
-import React = require("react");
+import React from "react";
 
 export  function Header(){
     return(
