@@ -3,6 +3,7 @@ import {Header} from '../components/Header/Header'
 import { styles } from "./style"
 import React from "react";
 import Login from '../components/Login/Login'
+import Cardapio from "../components/Cardapio/Cardapio";
 
 export default function Index(){
 
@@ -14,6 +15,8 @@ export default function Index(){
         </View>
 
         <Login />
+
+        <Cardapio />
     </ScrollView>
     );
 }
