@@ -9,11 +9,6 @@ export default function Index(){
 
     return(
         <ScrollView showsVerticalScrollIndicator={false} style={styles.scrollView}>
-        <View style={styles.container}>
-        <Header/>
-
-        </View>
-
         <Login />
 
         <Cardapio />

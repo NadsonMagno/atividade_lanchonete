@@ -4,17 +4,14 @@ export const styles = StyleSheet.create({
     fundo: {
        
         backgroundColor: '#000',
-        flex: 1,
+       /*  flex: 1, */
         justifyContent: 'center',
         alignItems: 'center',
     },
 
-    containerLogo:{
-        flex: 1,
-        justifyContent: 'center',
-    },
-
+  
     container:{
+        marginTop: 50,
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',

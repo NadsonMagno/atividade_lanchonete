@@ -6,12 +6,11 @@ import { styles } from './style';
 export default function Login() {
   return (
     <KeyboardAvoidingView style={styles.fundo}>
-    <View style={styles.containerLogo}>
-{/*         <Image source={require('../../assets/logo.png')} /> */}
-    </View>
+    
     <View style={styles.container}>
        
         <TextInput placeholder="Email" autoCorrect={false} onChange={()=>{}} style={styles.input}/>
+          
         <TextInput placeholder="Senha" autoCorrect={false} onChange={()=>{}} style={styles.input}/>
       
         <TouchableOpacity style={styles.btnSubmit}>

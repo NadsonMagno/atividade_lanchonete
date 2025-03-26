@@ -2,6 +2,9 @@ import React from "react";
 import {View, Text} from "react-native";
 
 import {styles} from "./style";
+import Alimento from "../Alimento/Alimento";
+
+const FotoCocaCola = require("../../../assets/images/download.jpeg");
 
 export default  function Cardapio() {
 
@@ -16,13 +19,10 @@ export default  function Cardapio() {
 
             <View style={styles.comida}>
                
-                <View>
-                    <Text>Nome do Prato</Text>
-                    <Text>Descrição do Prato</Text>
-                    <Text>Preço</Text>
-                </View>
+            
+            <Alimento image={FotoCocaCola}/>
 
-               {/*  <Image source={require("../../assets/logo.png")} style={styles.foto} style={styles.fotoComida}/> */}
+             
             </View>
 
 
