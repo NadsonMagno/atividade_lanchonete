@@ -5,6 +5,8 @@ import {styles} from "./style";
 import Alimento from "../Alimento/Alimento";
 
 const FotoCocaCola = require("../../../assets/images/download.jpeg");
+import { FlatList } from "react-native";
+import listaComida from "../Cardapio/listaComida"
 
 export default  function Cardapio() {
 
@@ -19,9 +21,23 @@ export default  function Cardapio() {
 
             <View style={styles.comida}>
                
-            
-            <Alimento image={FotoCocaCola}/>
-
+            <Text> Menu</Text>
+          
+            <FlatList
+    data={listaComida}
+    renderItem={({ item }) => (
+        <Alimento
+            image={
+                item.imagemUrl.uri // Verifica se é uma URL remota
+                    ? { uri: item.imagemUrl.uri }
+                    : item.imagemUrl // Caso contrário, usa require
+            }
+            nome={item.nome}
+            descricao={item.descricao}
+            preco={item.preco}
+        />
+    )}
+/>
              
             </View>
 

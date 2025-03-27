@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
 
     comida:{
         width: "100%",
-        flexDirection: "row",
+        flexDirection: "column",
   
         padding: 10,
     },

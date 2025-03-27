@@ -6,20 +6,27 @@ import { styles } from "./style";
 interface AlimentoProps {
     image: ImageSourcePropType; // Tipo correto para a propriedade image
     [key: string]: any; // Permite outras propriedades opcionais
+
+    nome: string;
+    descricao: string;
+    preco: number;
+
 }
 
-export default function Alimento({image, ...rest}: AlimentoProps) {
+export default function Alimento({image, nome,descricao, preco, ...rest}: AlimentoProps) {
 
     return (
         <TouchableOpacity style={styles.container}>
             <Image source={image} style={styles.foto}/>
-            <View>
-            <Text>Nome do Prato</Text>
-            <Text>Descrição do Prato</Text>
+
+            <View style={styles.textos}>
+            <Text>{nome}</Text>
+            <Text>{descricao}</Text>
             </View>
-            <View>
+
+            <View >
                 
-                <Text>Preço: R$ 10</Text>
+                <Text>Preço: R$ {preco}</Text>
             </View>
            
 

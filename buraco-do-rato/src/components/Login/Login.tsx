@@ -9,16 +9,18 @@ export default function Login() {
     
     <View style={styles.container}>
        
+    <TextInput placeholder="UserName" autoCorrect={false} onChange={()=>{}} style={styles.input}/>
+
         <TextInput placeholder="Email" autoCorrect={false} onChange={()=>{}} style={styles.input}/>
           
         <TextInput placeholder="Senha" autoCorrect={false} onChange={()=>{}} style={styles.input}/>
       
         <TouchableOpacity style={styles.btnSubmit}>
-            <Text>Entrar</Text>
+            <Text>Criar conta</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.btnRegister}>
-            <Text style={styles.registerText}>Criar conta</Text>
+            <Text style={styles.registerText}>Login</Text>
 
         </TouchableOpacity>
     </View>

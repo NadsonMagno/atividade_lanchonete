@@ -4,6 +4,7 @@ import { styles } from "./style"
 import React from "react";
 import Login from '../components/Login/Login'
 import Cardapio from "../components/Cardapio/Cardapio";
+import Resumo from "../components/Resumo/Resumo";
 
 export default function Index(){
 
@@ -12,6 +13,7 @@ export default function Index(){
         <Login />
 
         <Cardapio />
+        <Resumo />
     </ScrollView>
     );
 }
